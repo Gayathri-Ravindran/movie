@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block body %}
+<form method="POST" enctype="multipart/form-data">
+{% csrf_token %}
+{{form1.as_p}}
+    Are you ready to delete?<br>
+    <input type="submit" value="yes">
+
+</form>
+{% endblock %}
+
+
+
+
+
